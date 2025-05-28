@@ -53,4 +53,8 @@ Este é um projeto Flask para praticar kanji e vocabulário japonês de forma in
 
 ## Licença
 
+<<<<<<< HEAD
 MIT
+=======
+MIT
+>>>>>>> 7e5cdfc1ed74f1a29fccaacfdd5363fab9ad0fa8
