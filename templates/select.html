@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Select Kanji Day</title></head>
+<body>
+{% extends 'base.html' %}
+
+{% block body %}
+  <h2>Welcome to the Kanji Guessing Game!</h2>
+  <form method="post">
+    <label>Week: <input name="week"  autocomplete="off" required></label>
+    <label>Day: <input name="day"  autocomplete="off" required></label>
+    <button type="submit">Start</button>
+  </form>
+  {% if error %}<p style="color:red;">{{ error }}</p>{% endif %}
+  <p>Available: week 1 day 1</p>
+{% endblock %}
+</body>
+</html>

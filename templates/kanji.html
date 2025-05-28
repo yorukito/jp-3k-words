@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+  <h2>What is the pronunciation of the kanji <span style="color:blue;">{{ kanji }}</span>?</h2>
+  <form method="post">
+    <input name="pronunciation" autocomplete="off" autofocus required>
+    <button type="submit">Submit</button>
+  </form>
+
+  {% if feedback %}
+
+    <p>{{ feedback|safe }}</p>
+    
+  {% endif %}
+
+  <form method="post">
+    <input type="hidden" name="pronunciation" value="exit">
+    <button type="submit">Exit</button>
+  </form>
+
+{% endblock %}
